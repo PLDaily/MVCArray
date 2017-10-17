@@ -99,6 +99,15 @@
 		return this.arr.pop();
 	}
 
+	/**
+	 * 在指定索引处插入元素
+	 * @param  {number} index   数组的索引
+	 * @param  {string} element 数组指定索引插入的元素
+	 */
+	MVCArray.prototype.insertAt = function(index, element) {
+		this.arr.splice(index, 1, element);
+	}
+
 }.call(this));
 
 
