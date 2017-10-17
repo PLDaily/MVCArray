@@ -91,6 +91,14 @@
 		}
 	}
 
+	/**
+	 * 删除数组的最后一个元素并传回该元素
+	 * @return {string} 被删除的元素
+	 */
+	MVCArray.prototype.pop = function() {
+		return this.arr.pop();
+	}
+
 }.call(this));
 
 
