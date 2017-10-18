@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MVCArray</title>
+    <script type="text/javascript" src="./MVCArray.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        var arr = [1, 2, 3, 4, 5];
+        var mvcArray = new MVCArray(arr);
+        mvcArray.addEventListener('insert_at', function() {
+            console.log('insert_at')
+        });
+        console.log(mvcArray.getLength());
+        mvcArray.setAt(6);
+        console.log(mvcArray.getLength());
+        mvcArray.pop();
+        console.log(mvcArray.getLength());
+    </script>
+</body>
+</html>
